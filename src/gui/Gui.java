@@ -13,7 +13,7 @@ public class Gui {
 
 
     public void create(){
-        jf = new JFrame("Snake");
+        jf = new JFrame("Breakout");
         jf.setSize(width, height);
         jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jf.setLocationRelativeTo(null);

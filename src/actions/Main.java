@@ -1,5 +1,6 @@
 package actions;
 
+import clocks.GameClock;
 import game.GM;
 import gui.Gui;
 
@@ -10,5 +11,6 @@ public class Main {
 
         GM.setup();
         g.create();
+        GameClock.start();
     }
 }

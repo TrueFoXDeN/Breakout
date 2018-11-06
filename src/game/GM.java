@@ -1,9 +1,10 @@
 package game;
 
 public class GM {
-   static Player p;
+  public static Player p;
 
     public static void setup(){
-        p = new Player(300,575,125,25);
+        p = new Player(300,500,150,25);
+
     }
 }
