@@ -1,5 +1,7 @@
 package game;
 
+import data.Collision;
+
 public class Player {
 
     int x, y, width, height, speed;
@@ -16,10 +18,15 @@ public class Player {
     public void move() {
         switch (dir) {
             case LEFT:
-                x -= speed;
+                if(!Collision.collideLeft(x)) {
+                    x -= speed;
+                }
                 break;
             case RIGHT:
-                x += speed;
+                if(!Collision.collideRight(x,width)){
+                    x += speed;
+                }
+
                 break;
 
         }
